@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mishuagopian/paw-curl-exercise/issues"
   },
-  "homepage": "https://github.com/mishuagopian/paw-curl-exercise#readme"
+  "homepage": "https://github.com/mishuagopian/paw-curl-exercise#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
