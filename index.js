@@ -65,4 +65,5 @@ app.use((req, res) => {
 
 app.listen(port, () => {
   console.log(`PAW CURL exercise listening at port: ${port}.`)
+  console.log('We expect students to POST their names at /name')
 })
