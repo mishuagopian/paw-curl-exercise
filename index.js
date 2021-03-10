@@ -35,7 +35,7 @@ app.use((req, res, next) => {
 
 app.get('/random_header', (req, res) => {
   const header = headers[Math.floor(Math.random() * headers.length)]
-  res.send(`Hello Sr. Your Authorization header is: ${header}`)
+  res.send(`Hello paw student. Your Authorization header is: ${header}`)
 })
 
 app.post('/name', [authMiddleware], (req, res) => {
