@@ -50,7 +50,7 @@ app.post('/name', [authMiddleware], (req, res) => {
 })
 
 app.get('/names', (req, res, next) => {
-  if (req.header('paw-secret') != 'paw-secret-2021') {
+  if (req.header('paw-secret') != process.env.SECRET) {
     next()
   } else {
     res.status(200)
